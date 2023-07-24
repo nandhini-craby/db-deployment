@@ -15,7 +15,7 @@ pipeline {
                     sh """ 
                         pwd                        
                         echo 'deploy phase'
-                        wget ${jdbcDriverUrl} -O sqljdbc.jar
+                        # wget ${jdbcDriverUrl} -O sqljdbc.jar
                         ls -ltra
                         cat /etc/*release*
                         liquibase --version
