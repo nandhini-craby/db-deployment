@@ -18,7 +18,6 @@ pipeline {
                         # wget ${jdbcDriverUrl} -O sqljdbc.jar
                         ls -ltra
                         cat /etc/*release*
-                        sudo apt update
                         wget https://github.com/liquibase/liquibase/releases/download/v4.23.0/liquibase-additional-4.23.0.zip
                         unzip liquibase-*.zip
                         sudo mv liquibase /usr/local/bin/
