@@ -20,8 +20,6 @@ pipeline {
                         cat /etc/*release*
                         wget https://github.com/liquibase/liquibase/releases/download/v4.23.0/liquibase-4.23.0.tar.gz
                         tar -xzf liquibase-4.23.0.tar.gz
-                        mv liquibase-4.23.0 /opt/liquibase
-                        ln -s /opt/liquibase/liquibase /usr/local/bin/
                         liquibase --version
                         mkdir sql
                         if [ -d '/var/lib/jenkins/workspace/dbone/deploy/v1' ]; then
