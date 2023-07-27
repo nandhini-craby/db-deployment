@@ -19,7 +19,7 @@ pipeline {
                         ls -ltra
                         cat /etc/*release*
                         wget https://github.com/liquibase/liquibase/releases/download/v4.23.0/liquibase-additional-4.23.0.zip
-                        unzip liquibase-additional-4.23.0.zip
+                        unzip -a liquibase-additional-4.23.0.zip
                         sudo mv liquibase /usr/local/bin/
                         liquibase --version
                         mkdir sql
