@@ -8,7 +8,7 @@ pipeline {
 
         tools {
         // Install Liquibase from Maven Central with a meaningful name
-        maven 'LiquibaseTool'
+        maven 'Liquibase 4.23.0'
     }
 
     stages {
