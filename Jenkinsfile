@@ -6,9 +6,9 @@ pipeline {
 
     agent any
 
-        tools {
-        // Install Liquibase from Maven Central with a meaningful name
-        maven 'Liquibase 4.23.0'
+    tools {
+        // Use the 'liquibase' step to install Liquibase from the configured installation
+        liquibase 'LiquibaseTool'
     }
 
     stages {
