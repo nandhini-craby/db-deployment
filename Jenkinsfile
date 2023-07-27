@@ -6,6 +6,11 @@ pipeline {
 
     agent any
 
+        tools {
+        // Install Liquibase from Maven Central with a meaningful name
+        maven 'LiquibaseTool'
+    }
+
     stages {
         stage('Deploy in dbone') {
             steps {
@@ -18,7 +23,6 @@ pipeline {
                         # wget ${jdbcDriverUrl} -O sqljdbc.jar
                         ls -ltra
                         cat /etc/*release*
-                        wget https://github.com/liquibase/liquibase/releases/download/v4.23.0/liquibase-additional-4.23.0.zip
                         liquibase --version
                         mkdir sql
                         if [ -d '/var/lib/jenkins/workspace/dbone/deploy/v1' ]; then
