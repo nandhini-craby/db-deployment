@@ -23,15 +23,15 @@ pipeline {
                         # sudo snap install liquibase
                         liquibase --version
                         mkdir sql1
-                        if [ -d '/var/lib/jenkins/workspace/dbone/deploy/v1' ]; then
-                            echo 'Installing config files in /var/lib/jenkins/workspace/dbone/deploy/v1...'
-                            mv '/var/lib/jenkins/workspace/dbone/deploy/v1' '/var/lib/jenkins/workspace/sql1'
-                            mv '/var/lib/jenkins/workspace/dbone/liquibase.properties' '/var/lib/jenkins/workspace/'
-                            liquibase update  
-                            mv '/var/lib/jenkins/workspace/sql1/v1' '/var/lib/jenkins/workspace/dbone/deploy/'
-                            mv '/var/lib/jenkins/workspace/dbone/liquibase.properties' '/var/lib/jenkins/workspace/dbone'
-                        fi
-                    """
+                        #if [ -d '/var/lib/jenkins/workspace/dbone/deploy/v1' ]; then
+                            #echo 'Installing config files in /var/lib/jenkins/workspace/dbone/deploy/v1...'
+                        mv '/var/lib/jenkins/workspace/dbone/deploy/v1' '/var/lib/jenkins/workspace/sql1'
+                        mv '/var/lib/jenkins/workspace/dbone/liquibase.properties' '/var/lib/jenkins/workspace/'
+                        liquibase update  
+                        # mv '/var/lib/jenkins/workspace/sql1/v1' '/var/lib/jenkins/workspace/dbone/deploy/'
+                            #mv '/var/lib/jenkins/workspace/dbone/liquibase.properties' '/var/lib/jenkins/workspace/dbone'
+                        #fi
+                    #"""
                 }
             }
         }
