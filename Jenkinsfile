@@ -22,6 +22,7 @@ pipeline {
                         # tar -xzf liquibase-4.23.0.tar.gz
                         # sudo snap install liquibase
                         liquibase --version
+                        rm -rf sql
                         mkdir sql
                         #if [ -d '/var/lib/jenkins/workspace/dbone/deploy/v1' ]; then
                             #echo 'Installing config files in /var/lib/jenkins/workspace/dbone/deploy/v1...'
