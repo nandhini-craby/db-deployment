@@ -1,6 +1,6 @@
 USE test;
 
-CREATE TABLE users1 (
+CREATE TABLE sampletable (
     user_id INT PRIMARY KEY,
     username VARCHAR(50) NOT NULL,
     email VARCHAR(100) UNIQUE,
