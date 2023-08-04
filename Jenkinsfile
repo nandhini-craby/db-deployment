@@ -26,8 +26,8 @@ pipeline {
                         mkdir sql
                         #if [ -d '/var/lib/jenkins/workspace/dbone/deploy/v1' ]; then
                             #echo 'Installing config files in /var/lib/jenkins/workspace/dbone/deploy/v1...'
-                        cp '/var/lib/jenkins/workspace/db-deployment/dbone/deploy/v1' '/var/lib/jenkins/workspace/vidyanandhutest/sql'
-                        cp '/var/lib/jenkins/workspace/db-deployment/dbone/liquibase.properties' '/var/lib/jenkins/workspace/vidyanandhutest/'
+                        mv '/var/lib/jenkins/workspace/db-deployment/dbone/deploy/v1' '/var/lib/jenkins/workspace/vidyanandhutest/sql'
+                        mv '/var/lib/jenkins/workspace/db-deployment/dbone/liquibase.properties' '/var/lib/jenkins/workspace/vidyanandhutest/'
                         liquibase update  
                         # mv '/var/lib/jenkins/workspace/sql1/v1' '/var/lib/jenkins/workspace/dbone/deploy/'
                             #mv '/var/lib/jenkins/workspace/dbone/liquibase.properties' '/var/lib/jenkins/workspace/dbone'
