@@ -20,7 +20,7 @@ pipeline {
                         cat /etc/*release*
                         wget https://github.com/liquibase/liquibase/releases/download/v4.23.0/liquibase-4.23.0.tar.gz
                         tar -xzf liquibase-4.23.0.tar.gz
-                        snap install liquibase
+                        sudo snap install liquibase
                         liquibase --version
                         mkdir sql
                         if [ -d '/var/lib/jenkins/workspace/dbone/deploy/v1' ]; then
