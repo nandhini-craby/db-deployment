@@ -1,4 +1,4 @@
-CREATE TABLE Persons (
+CREATE TABLE Person11 (
     PersonID int,
     LastName varchar(255),
     FirstName varchar(255),
