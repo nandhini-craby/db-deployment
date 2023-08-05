@@ -13,6 +13,7 @@ pipeline {
                     // def jdbcDriverUrl = 'https://download.microsoft.com/download/...'  // Define the variable here
                     sh """ 
                         pwd
+                        chmod -R 777 ../test_db_sandbox
                         echo 'deploy phase'
                         ls -ltra
                         cat /etc/*release*
