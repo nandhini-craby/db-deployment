@@ -27,10 +27,10 @@ pipeline {
                         #if [ -d '/var/lib/jenkins/workspace/dbone/deploy/v1' ]; then
                             #echo 'Installing config files in /var/lib/jenkins/workspace/dbone/deploy/v1...'
                         mv '/var/lib/jenkins/workspace/db-deployment/dbone/deploy/v1' '/var/lib/jenkins/workspace/vidyanandhutest/sql'
-                        mv '/var/lib/jenkins/workspace/db-deployment/dbone/liquibase.properties' '/var/lib/jenkins/workspace/vidyanandhutest/'
+                        mv '/var/lib/jenkins/workspace/db-deployment/dbone/liquibase.properties' '/var/lib/jenkins/workspace/vidyanandhutest/liquibase.properties'
                         liquibase update  
-                        mv /var/lib/jenkins/workspace/vidyanandhutest/sql /var/lib/jenkins/workspace/db-deployment/dbone/deploy/v1
-                        mv '/var/lib/jenkins/workspace/vidyanandhutest/' '/var/lib/jenkins/workspace/db-deployment/dbone/liquibase.properties'
+                        mv /var/lib/jenkins/workspace/vidyanandhutest/sql/ /var/lib/jenkins/workspace/db-deployment/dbone/deploy/
+                        mv '/var/lib/jenkins/workspace/vidyanandhutest/liquibase.properties' '/var/lib/jenkins/workspace/db-deployment/dbone/liquibase.properties'
                         #fi
                     #"""
                 }
