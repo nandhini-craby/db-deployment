@@ -29,8 +29,8 @@ pipeline {
                         mv '/var/lib/jenkins/workspace/db-deployment/dbone/deploy/v1' '/var/lib/jenkins/workspace/vidyanandhutest/sql'
                         mv '/var/lib/jenkins/workspace/db-deployment/dbone/liquibase.properties' '/var/lib/jenkins/workspace/vidyanandhutest/'
                         liquibase update  
-                        # mv '/var/lib/jenkins/workspace/sql1/v1' '/var/lib/jenkins/workspace/dbone/deploy/'
-                            #mv '/var/lib/jenkins/workspace/dbone/liquibase.properties' '/var/lib/jenkins/workspace/dbone'
+                        mv '/var/lib/jenkins/workspace/vidyanandhutest/sql' '/var/lib/jenkins/workspace/db-deployment/dbone/deploy/v1'
+                        mv '/var/lib/jenkins/workspace/vidyanandhutest/' '/var/lib/jenkins/workspace/db-deployment/dbone/liquibase.properties'
                         #fi
                     #"""
                 }
