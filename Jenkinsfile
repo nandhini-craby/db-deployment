@@ -1,8 +1,8 @@
 pipeline {
-    // options {
-        // durabilityHint 'PERFORMANCE_OPTIMIZED'
-        // ansiColor('xterm')
-    // }
+    options {
+        durabilityHint 'PERFORMANCE_OPTIMIZED'
+        ansiColor('xterm')
+    }
 
     agent any
 
