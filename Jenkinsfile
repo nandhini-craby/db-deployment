@@ -13,7 +13,7 @@ pipeline {
                     def jdbcDriverUrl = 'https://download.microsoft.com/download/...'  // Define the variable here
 
                     sh """ 
-                        pwd                        
+                        pwd
                         echo 'deploy phase'
                         # wget ${jdbcDriverUrl} -O sqljdbc.jar
                         ls -ltra
