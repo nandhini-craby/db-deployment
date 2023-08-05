@@ -19,11 +19,11 @@ pipeline {
                         liquibase --version
                         rm -rf sql
                         mkdir sql
-                        mv '/var/lib/jenkins/workspace/db-deployment/dbone/deploy/v1' '/var/lib/jenkins/workspace/test_db_sandbox/sql'
-                        mv '/var/lib/jenkins/workspace/db-deployment/dbone/liquibase.properties' '/var/lib/jenkins/workspace/test_db_sandbox/liquibase.properties'
+                        mv '/var/lib/jenkins/workspace/db-deployment/dbone/deploy/v1' '/var/lib/jenkins/workspace/vidyanandhutest/sql'
+                        mv '/var/lib/jenkins/workspace/db-deployment/dbone/liquibase.properties' '/var/lib/jenkins/workspace/vidyanandhutest/liquibase.properties'
                         liquibase update  
-                        mv /var/lib/jenkins/workspace/test_db_sandbox/sql/* /var/lib/jenkins/workspace/db-deployment/dbone/deploy/
-                        mv '/var/lib/jenkins/workspace/test_db_sandbox/liquibase.properties' '/var/lib/jenkins/workspace/db-deployment/dbone/liquibase.properties'
+                        mv /var/lib/jenkins/workspace/vidyanandhutest/sql/* /var/lib/jenkins/workspace/db-deployment/dbone/deploy/
+                        mv '/var/lib/jenkins/workspace/vidyanandhutest/liquibase.properties' '/var/lib/jenkins/workspace/db-deployment/dbone/liquibase.properties'
                     """
                 }
             }
