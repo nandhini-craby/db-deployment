@@ -10,7 +10,7 @@ pipeline {
         stage('Deploy in dbone') {
             steps {
                 script {
-                    #def jdbcDriverUrl = 'https://download.microsoft.com/download/...'  // Define the variable here
+                    // def jdbcDriverUrl = 'https://download.microsoft.com/download/...'  // Define the variable here
                     sh """ 
                         pwd
                         echo 'deploy phase'
