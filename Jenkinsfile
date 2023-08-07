@@ -7,6 +7,9 @@ pipeline {
     agent any
 
     stages {
+        when {
+                    expression { choice == 'deploy'}
+                }
         stage('Deploy in dbone') {
             steps {
                 script {
