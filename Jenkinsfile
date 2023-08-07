@@ -8,9 +8,6 @@ pipeline {
 
     stages {
         stage('Deploy in dbone') {
-        when {
-                    expression { choice == 'deploy'}
-                }
             steps {
                 script {
                     // def jdbcDriverUrl = 'https://download.microsoft.com/download/...'  // Define the variable here
