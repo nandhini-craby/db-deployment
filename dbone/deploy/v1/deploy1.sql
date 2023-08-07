@@ -1,4 +1,4 @@
-CREATE TABLE sampletable11 (
+CREATE TABLE TABLE_NAME (
     PersonID int,
     LastName varchar(255),
     FirstName varchar(255),
